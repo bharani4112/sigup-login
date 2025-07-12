@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="assets/img/logo.jpg" type="image/png">
+<title>Bharani Login Page</title>
+<!-- Bootstrap Css -->
+<link rel="stylesheet" href="vender/bootstrap/css/bootstrap.min.css">
+<!-- Icofont -->
+<link rel="stylesheet" href="vender/icofont/icofont.min.css">
+<link href="../../../cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<!-- Custom Css -->
+<link rel="stylesheet" href="css/style.css">
+<!-- for logs -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<!-- FOR floating effect -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body class="d-flex flex-column vh-100">
+<div id="particles-js"></div>
+<div class="blurred-shape"></div>
+<section class="auth-section">
+  <div class="auth-card">
+    <img src="assets/img/logo.jpg" alt="Bharani Logo" class="logo">
+    <button id="theme-toggle" class="theme-btn" title="Toggle dark/light mode">
+      <i class="bi bi-moon"></i>
+    </button>
+    <h2 class="typing"></h2>
+    <div class="tab-header">
+      <div class="tab active" id="login-tab">Login</div>
+      <div class="tab" id="signup-tab">Sign Up</div>
+    </div>
+    <div class="tab-content">
+      <div class="form-panel active" id="login-panel">
+        <form class="auth-form">
+          <input type="text" placeholder="Username or Email">
+          <div class="password-field">
+            <input type="password" placeholder="Password" id="loginPass">
+            <i class="bi bi-eye-slash toggle-pass" onclick="togglePass('loginPass', this)"></i>
+          </div>
+          <button type="submit" class="btn-submit">Login</button>
+          <a href="#" class="forgot">Forgot password?</a>
+        </form>
+      </div>
+      <div class="form-panel" id="signup-panel">
+        <form class="auth-form">
+          <input type="text" placeholder="Username">
+          <input type="email" placeholder="Email">
+          <div class="password-field">
+            <input type="password" placeholder="Password" id="signupPass">
+            <i class="bi bi-eye-slash toggle-pass" onclick="togglePass('signupPass', this)"></i>
+          </div>
+          <button type="submit" class="btn-submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+    <div class="divider">Or continue with</div>
+    <div class="social-buttons">
+      <button class="social google"><i class="bi bi-google"></i></button>
+      <button class="social facebook"><i class="bi bi-facebook"></i></button>
+      <button class="social apple"><i class="bi bi-apple"></i></button>
+    </div><br>
+    <footer class="small mt-3">© 2025 Bharani</footer>
+  </div>
+</section>
+<!-- Scripts -->
+<script src="vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vender/jquery/jquery.min.js"></script>
+<script src="vender/slick/slick/slick.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
